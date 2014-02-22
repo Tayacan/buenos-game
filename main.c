@@ -49,7 +49,6 @@ int main(void) {
         display_flip(&disp);
     }
 
-    syscall_halt();
-    syscall_exit(0);
+    syscall_halt(); // replace with syscall_exit(0) to run as a process
     return 0;
 }
